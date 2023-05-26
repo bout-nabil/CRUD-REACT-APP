@@ -31,8 +31,10 @@ function UserList() {
                                         <td>{user.name}</td>
                                         <td>{user.email}</td>
                                         <td>
-                                            <button>Edit</button>
-                                            <button>Remove</button>
+                                            <Link to={`/update-user/${user.id}`}>
+                                                <button>Edit</button>
+                                            </Link>
+                                                <button>Remove</button>
                                         </td>
                                     
                                    </tr>
