@@ -27,6 +27,7 @@ body {
 
 #title {
   text-align: center;
+  border-bottom: 10px solid #88d0ec;
 }
 
 h2 {
@@ -35,21 +36,41 @@ h2 {
 
 button {
   border: none;
-  background: #f09797;
   color: #fff;
+  background-color: #88d0ec;
   font-size: 1em;
   cursor: pointer;
   padding: 10px;
-  margin: 0 auto;
   border-radius: 10px;
   text-align: center;
+  margin: 5px;
 }
 
-table thead td {
+#addUser {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px;
+}
+
+#btn-edit {
+  background-color: #88d0ec;
+}
+
+#btn-delete {
+  background-color: #e72020;
+}
+
+#table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 
@@ -58,4 +79,3 @@ table thead td {
     width: 450px;
   }
 }
-

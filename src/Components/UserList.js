@@ -12,11 +12,12 @@ function UserList() {
     return(
         <div>
             <h2>User List</h2>
-            <div>
+            <div id="addUser">
                 <Link to="/add-user">
                     <button>Add user</button>
                 </Link>
             </div>
+            <div id="table">
             <table>
                 <thead>
                     <tr>
@@ -36,9 +37,9 @@ function UserList() {
                                     <td>{user.email}</td>
                                     <td>
                                         <Link to={`/update-user/${user.id}`}>
-                                            <button>Edit</button>
+                                            <button id="btn-edit">Edit</button>
                                         </Link>
-                                        <button onClick={()=>handleDelete(user.id)}>Delete</button>
+                                        <button id="btn-delete" onClick={()=>handleDelete(user.id)}>Delete</button>
                                     </td>
                                 </tr>
                                 )
@@ -47,6 +48,7 @@ function UserList() {
                     } 
                 </tbody>
             </table>
+            </div>
         </div>
     )
 }
