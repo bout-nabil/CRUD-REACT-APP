@@ -21,7 +21,7 @@ function UpdateUser() {
 
     return(
         <div>
-            <form>
+            <form id="formUpdate">
                 <label>Name </label>
                 <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
                 <label>Email </label>

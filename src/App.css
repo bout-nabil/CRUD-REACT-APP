@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fff;
+  background-color: #88d0ec;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #444;
@@ -71,6 +71,15 @@ button {
   border-radius: 10px;
   padding: 10px;
   margin: 0 auto;
+}
+
+#formUpdate {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
 
