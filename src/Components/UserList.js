@@ -1,9 +1,14 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteUserAction } from "../Config/actions";
 
 function UserList() {
     //data from store we use useSelector()
     const users = useSelector((data)=>data.users);
+    const dispatch = useDispatch();
+    const handleDelete = (id) => {
+        dispatch(deleteUserAction(id))
+    }
     return(
         <div>
             <h2>User List</h2>
@@ -33,7 +38,7 @@ function UserList() {
                                         <Link to={`/update-user/${user.id}`}>
                                             <button>Edit</button>
                                         </Link>
-                                        <button>Delete</button>
+                                        <button onClick={()=>handleDelete(user.id)}>Delete</button>
                                     </td>
                                 </tr>
                                 )
